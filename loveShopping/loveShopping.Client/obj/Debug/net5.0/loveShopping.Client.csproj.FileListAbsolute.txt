@@ -1,4 +1,3 @@
-C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Debug\net5.0\loveShopping.Client.csprojAssemblyReference.cache
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Debug\net5.0\loveShopping.Client.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Debug\net5.0\loveShopping.Client.AssemblyInfoInputs.cache
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Debug\net5.0\loveShopping.Client.AssemblyInfo.cs

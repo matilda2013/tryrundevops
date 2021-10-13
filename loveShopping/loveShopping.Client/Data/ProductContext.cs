@@ -58,6 +58,14 @@ namespace loveShopping.Client.Data
                     ImageFile = "product-6.png",
                     Price = 240.00M,
                     Category = "Home Kitchen"
+                },
+                  new Product()
+                {
+                    Name = "LG G8 ThinQ EndofCourse",
+                    Description = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
+                    ImageFile = "product-6.png",
+                    Price = 240.00M,
+                    Category = "Home Theatre"
                 }
         };
 }
