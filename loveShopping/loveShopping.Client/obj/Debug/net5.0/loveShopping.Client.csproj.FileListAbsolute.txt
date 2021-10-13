@@ -37,3 +37,4 @@ C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Cli
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Debug\net5.0\loveShopping.Client.pdb
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Debug\net5.0\loveShopping.Client.genruntimeconfig.cache
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Debug\net5.0\loveShopping.Client.csproj.CopyComplete
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Debug\net5.0\loveShopping.Client.csprojAssemblyReference.cache
