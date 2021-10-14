@@ -103,9 +103,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\loveShopping.Client.csproj",
-      "projectName": "loveShopping.Client",
-      "projectPath": "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\loveShopping.Client.csproj",
+      "projectUniqueName": "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\loveShopping.Cliental.csproj",
+      "projectName": "loveShopping.Cliental",
+      "projectPath": "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\loveShopping.Cliental.csproj",
       "packagesPath": "C:\\Users\\olulanu.olaniyi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\obj\\",
       "projectStyle": "PackageReference",

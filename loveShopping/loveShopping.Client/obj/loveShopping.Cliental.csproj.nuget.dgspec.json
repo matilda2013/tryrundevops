@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\loveShopping.Cliental.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\loveShopping.Cliental.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\loveShopping.Cliental.csproj",
+        "projectName": "loveShopping.Cliental",
+        "projectPath": "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\loveShopping.Cliental.csproj",
+        "packagesPath": "C:\\Users\\olulanu.olaniyi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\olulanu.olaniyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
