@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oA1twplZdABPJPDBKFlhvarKwqvsSoLsT/D1t8SnAsX/d2PeENGWkNzZJwDgF0bZephhWd+LIECb4kR0Ncq/Mw==",
+  "dgSpecHash": "+lm2MQ+4jeR6/XuNiN+RxfJdTEjC+Mgm0NqFckeDRlE5d4ckG9EGyIlVMRpzzJJUBqBXi1DdzkA4feAugvzRog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\loveShopping.Cliental.csproj",
+  "projectFilePath": "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\loveShopping.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\olulanu.olaniyi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512"
   ],
