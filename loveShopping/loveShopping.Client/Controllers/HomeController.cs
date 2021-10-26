@@ -1,11 +1,15 @@
-﻿using loveShopping.Client.Data;
+﻿
+
 using loveShopping.Client.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace loveShopping.Client.Controllers
@@ -13,16 +17,22 @@ namespace loveShopping.Client.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly HttpClient _httpClient;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IHttpClientFactory httpClientFactory)
         {
             _logger = logger;
+            _httpClient = httpClientFactory.CreateClient("loveShoppingAPIClient");
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> IndexAsync()
         {
-        
-            return View(ProductContext.Products);
+
+            //  return View(ProductContext.Products);
+            var response = await _httpClient.GetAsync("/product");
+            var content = await response.Content.ReadAsStringAsync();
+            var productList = JsonConvert.DeserializeObject<IEnumerable<Product>>(content);
+             return View(productList);
         }
 
         public IActionResult Privacy()

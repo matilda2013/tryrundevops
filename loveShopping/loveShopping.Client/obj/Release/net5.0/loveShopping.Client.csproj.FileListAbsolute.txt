@@ -37,3 +37,15 @@ C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Cli
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Release\net5.0\loveShopping.Client.pdb
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Release\net5.0\loveShopping.Client.genruntimeconfig.cache
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Release\net5.0\loveShopping.Client.csproj.CopyComplete
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\bin\Release\net5.0\loveShopping.API.deps.json
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\bin\Release\net5.0\loveShopping.API.runtimeconfig.json
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\bin\Release\net5.0\loveShopping.API.runtimeconfig.dev.json
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\bin\Release\net5.0\loveShopping.API.exe
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\bin\Release\net5.0\Microsoft.OpenApi.dll
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\bin\Release\net5.0\loveShopping.API.dll
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\bin\Release\net5.0\loveShopping.API.pdb
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Release\net5.0\loveShopping.Client.csprojAssemblyReference.cache
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client\obj\Release\net5.0\loveShopping.Client.MvcApplicationPartsAssemblyInfo.cs

@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  loveshopping.api:
+    image: ${DOCKER_REGISTRY-}loveshoppingapi
+    build:
+      context: .
+      dockerfile: loveShopping.API/Dockerfile
+
+  loveshopping.client:
+    image: ${DOCKER_REGISTRY-}loveshoppingclient
+    build:
+      context: .
+      dockerfile: loveShopping.Client/Dockerfile
+
+  loveshopping.db:
+    image: mongo
+

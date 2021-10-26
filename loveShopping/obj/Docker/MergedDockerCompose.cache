@@ -1,0 +1,41 @@
+services:
+  loveshopping.api:
+    build:
+      context: C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping
+      dockerfile: loveShopping.API/Dockerfile
+    container_name: loveshoppingapi
+    depends_on:
+      loveshopping.db:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development - "DatabaseSettings:ConnectionString=mongodb://loveshoppingdb:27017"
+    image: loveshoppingapi
+    ports:
+    - published: 9000
+      target: 80
+  loveshopping.client:
+    build:
+      context: C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping
+      dockerfile: loveShopping.Client/Dockerfile
+    container_name: loveshoppingclient
+    depends_on:
+      loveshopping.api:
+        condition: service_started
+      loveshopping.db:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development - "ShoppingAPIUrl=http://loveshoppingapi"
+    image: loveshoppingclient
+    ports:
+    - published: 9001
+      target: 80
+  loveshopping.db:
+    container_name: loveshoppingdb
+    image: mongo
+    ports:
+    - published: 27017
+      target: 27017
+    restart: always
+    volumes:
+    - /site:/data/db:rw
+version: '3.4'

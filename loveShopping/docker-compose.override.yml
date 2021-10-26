@@ -1,0 +1,34 @@
+version: '3.4'
+
+services:
+  loveshopping.api:
+    container_name: loveshoppingapi
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+       - "DatabaseSettings:ConnectionString=mongodb://loveshoppingdb:27017"
+    depends_on:
+      - loveshopping.db
+    ports:
+      - "9000:80"
+  
+
+  loveshopping.client:
+    container_name: loveshoppingclient
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+          - "ShoppingAPIUrl=http://loveshoppingapi"
+    depends_on:
+      - loveshopping.db
+      - loveshopping.api
+    ports:
+      - "9001:80"
+
+  loveshopping.db:
+    container_name: loveshoppingdb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ${WEBAPP_STORAGE_HOME}/site:/data/db
+ 
+

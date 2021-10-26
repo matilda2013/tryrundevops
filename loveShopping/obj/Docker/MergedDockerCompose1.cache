@@ -1,0 +1,85 @@
+services:
+  loveshopping.api:
+    build:
+      context: C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping
+      dockerfile: loveShopping.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: loveShopping.API
+      target: base
+    container_name: loveshoppingapi
+    depends_on:
+      loveshopping.db:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development - "DatabaseSettings:ConnectionString=mongodb://loveshoppingdb:27017"
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: loveshoppingapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/loveShopping.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 9000
+      target: 80
+    tty: true
+    volumes:
+    - C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API:/app:rw
+    - C:\Users\olulanu.olaniyi\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\olulanu.olaniyi\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\olulanu.olaniyi\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\olulanu.olaniyi\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping:/src:rw
+  loveshopping.client:
+    build:
+      context: C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping
+      dockerfile: loveShopping.Client/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: loveShopping.Client
+      target: base
+    container_name: loveshoppingclient
+    depends_on:
+      loveshopping.api:
+        condition: service_started
+      loveshopping.db:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development - "ShoppingAPIUrl=http://loveshoppingapi"
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: loveshoppingclient:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/loveShopping.Client.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 9001
+      target: 80
+    tty: true
+    volumes:
+    - C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.Client:/app:rw
+    - C:\Users\olulanu.olaniyi\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\olulanu.olaniyi\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\olulanu.olaniyi\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\olulanu.olaniyi\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping:/src:rw
+  loveshopping.db:
+    container_name: loveshoppingdb
+    image: mongo
+    ports:
+    - published: 27017
+      target: 27017
+    restart: always
+    volumes:
+    - /site:/data/db:rw
+version: '3.4'
