@@ -1,0 +1,29 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: loveshoppingapi-hpa
+spec:
+  maxReplicas: 10 # define max replica count
+  minReplicas: 2
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: loveshoppingapi-deployment
+  targetCPUUtilizationPercentage: 50  # target CPU Utilization
+
+---
+
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+     name: loveshoppingclient-hpa
+spec:
+  maxReplicas: 10
+  minReplicas: 3
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: loveshoppingclient-deployment
+  targetCPUUtilizationPercentage: 50 # target CPU utilization
+            
+

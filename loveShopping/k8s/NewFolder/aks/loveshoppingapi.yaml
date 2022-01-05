@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: loveshoppingapi-deployment
+  labels:
+    app: loveshoppingapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: loveshoppingapi
+  template:
+    metadata:
+      labels:
+        app: loveshoppingapi
+    spec:
+      containers:
+
+        - name: loveshoppingapi
+          image: loveshoppingacr.azurecr.io/loveshoppingapi:v1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Development
+            - name: DatabaseSettings_ConnectionString
+              valueFrom:
+                  configMapKeyRef:
+                    name: mongo-configmap
+                    key: connection_string
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "0.1"
+            limits:
+              memory: "128Mi"
+              cpu: "0.3"
+      imagePullSecrets:
+        - name:  acr-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: loveshoppingapi-service
+spec:
+  selector:
+    app: loveshoppingapi
+  ports:
+    - protocol: TCP
+      port: 80
+     

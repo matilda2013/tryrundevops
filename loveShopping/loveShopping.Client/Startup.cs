@@ -25,7 +25,7 @@ namespace loveShopping.Client
 
             services.AddHttpClient("loveShoppingAPIClient", client =>
             {
-                client.BaseAddress = new Uri("http://localhost:4000/"); //API url
+                //client.BaseAddress = new Uri("http://localhost:4000/"); //API url
                 client.BaseAddress = new Uri(Configuration["ShoppingAPIUrl"]);
             });
             services.AddControllersWithViews();

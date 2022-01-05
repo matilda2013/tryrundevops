@@ -23,7 +23,6 @@ C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
-C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API\obj\Debug\net5.0\loveShopping.API.csprojAssemblyReference.cache
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API\obj\Debug\net5.0\loveShopping.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API\obj\Debug\net5.0\loveShopping.API.AssemblyInfoInputs.cache
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API\obj\Debug\net5.0\loveShopping.API.AssemblyInfo.cs
@@ -39,3 +38,4 @@ C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API\obj\Debug\net5.0\ref\loveShopping.API.dll
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API\obj\Debug\net5.0\loveShopping.API.pdb
 C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API\obj\Debug\net5.0\loveShopping.API.genruntimeconfig.cache
+C:\Users\olulanu.olaniyi\source\repos\tryrundevops\loveShopping\loveShopping.API\obj\Debug\net5.0\loveShopping.API.csprojAssemblyReference.cache

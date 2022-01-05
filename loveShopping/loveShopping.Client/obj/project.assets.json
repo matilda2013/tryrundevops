@@ -775,7 +775,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\olulanu.olaniyi\\.nuget\\packages\\": {}
+    "C:\\Users\\olulanu.olaniyi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -786,8 +787,12 @@
       "packagesPath": "C:\\Users\\olulanu.olaniyi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\olulanu.olaniyi\\source\\repos\\tryrundevops\\loveShopping\\loveShopping.Client\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\olulanu.olaniyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
