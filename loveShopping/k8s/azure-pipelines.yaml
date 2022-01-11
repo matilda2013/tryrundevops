@@ -35,6 +35,6 @@ stages:
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
-        buildContext: $(Build.SourcesDirectory)/loveShopping/loveShopping.API/Dockerfile
+        buildContext: $(Build.SourcesDirectory)/loveShopping/loveShopping.API
         tags: |
           $(tag)
